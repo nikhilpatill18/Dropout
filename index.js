@@ -43,7 +43,7 @@ gsap.to("#section-1", {
         start: "top 60%",
         end: "top -100%",
         scroll: "body",
-        scrub: 1,
+        scrub: 2,
         // pin: true,
         marker: true
     }
@@ -60,5 +60,18 @@ gsap.to("#video_section", {
         scrub: 1,
         // pin: true,
         marker: true
+    }
+})
+gsap.to("#section-3 h1", {
+    transform: "translateX(-100%)",
+    duration: 3,
+    delay: 1,
+    scrollTrigger: {
+        trigger: "#section-3",
+        start: "top 0%",
+        end: "top -100%",
+        scroll: "body",
+        scrub: 2,
+        pin: true
     }
 })
