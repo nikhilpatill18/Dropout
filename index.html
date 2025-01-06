@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-black text-white">
+    <!-- nav-bar section -->
+    <nav class="bg-black sticky top-0 z-50">
+        <div class="w-full bg-black flex justify-between text-white overflow-hidden ">
+            <div class="flex gap-10 p-6 items-center ">
+                <h3 class="text-xl font-bold">DropBox</h3>
+                <ul class="hidden lg:flex gap-5 font-semibold">
+                    <li class="hover:text-blue-600">Products <i
+                            class="fa-solid fa-chevron-down text-sm font-semibold"></i> </li>
+                    <li class="hover:text-blue-600">Solution <i
+                            class="fa-solid fa-chevron-down text-sm font-semibold"></i></li>
+                    <li class="hover:text-blue-600">Enterprice</li>
+                    <li class="hover:text-blue-600">Pricing</li>
+                </ul>
+            </div>
+            <div class="flex justify-center items-center gap-6 mr-6 relative">
+                <div>
+                    <a href="#"> <i class="fa-solid fa-globe"></i></a>
+                </div>
+                <ul class="flex gap-8 text-sm font-bold">
+                    <li class="hidden lg:flex">
+                        <a href="#">Contact Sales</a>
+                    </li>
+                    <li class="hidden lg:flex">
+                        <a href="#">Get app <i class="fa-solid fa-chevron-down text-sm font-semibold"></i> </a>
+                    </li>
+                    <li>
+                        <a href="#">Sign up</a>
+                    </li>
+                    <li>
+                        <a href="#">Log in</a>
+                    </li>
+                </ul>
+                <button class=" max-md:hidden flex bg-white outline-none font-bold text-black p-2 rounded-lg">
+                    Get Started
+                </button>
+
+                <span class="menu_icon lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+                <span class="x_icon hidden lg:hidden">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+
+            </div>
+        </div>
+        <!-- toggle menu section -->
+
+        <div class=" toggle_menu_section    hidden bg-gray-950 h-screen lg:hidden -z-5">
+            <div class="flex flex-col text-white font-semibold text-xl gap-10 justify-start ml-3 p-4 mt-4">
+                <ul class="flex flex-col gap-10 ml-10">
+                    <li>
+                        Product <i class="fa-solid fa-chevron-down text-sm font-semibold"></i>
+                    </li>
+                    <li>
+                        Solution <i class="fa-solid fa-chevron-down text-sm font-semibold"></i>
+                    </li>
+                    <li>
+                        Enterprice
+                    </li>
+                    <li>
+                        Pricing
+                    </li>
+                    <li>
+                        Contact Sales
+                    </li>
+                    <li>
+                        Get app <i class="fa-solid fa-chevron-down text-sm font-semibold"></i>
+                    </li>
+                </ul>
+                <button
+                    class="max-md:flex hidden bg-white text-black w-full rounded-lg p-4 text-center justify-center items-center">
+                    Get Started
+                </button>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- section -1 -->
+    <section id="section-1">
+        <div class="w-full flex justify-center items-center mt-24">
+            <div class="flex flex-col  text-white p-10 gap-6">
+
+                <h2 class="text-5xl font-bold text-center">
+                    Get to work, with a lot less work
+                </h2>
+
+                <p class="font-semibold text-lg text-center text-gray-300">
+                    Dropbox delivers tools that help you move your work forward faster, keep it safe, and let you
+                    collaborate with ease.
+                </p>
+
+                <div class="flex items-center gap-4 justify-center  mt-9 max-md:flex-col ">
+                    <div class="flex flex-col gap-3 justify-end items-center">
+                        <button
+                            class="group bg-blue-500 rounded-lg text-black py-4 px-10 font-semibold hover:bg-blue-400">
+                            Sign up free <i
+                                class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-all"></i>
+
+                        </button>
+                        <span class="text-sm text-gray-100">
+                            <p>No credit card required</p>
+                        </span>
+                    </div>
+                    <button class="group rounded-md text-white p-4 font-semibol">
+                        <a href="#" class="underline text-lg">Find your plan</a> <i
+                            class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-all"></i>
+                    </button>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- section-2 -->
+
+    <section id="section-2">
+        <div class="w-full flex relative justify-between mt-10  ">
+            <div class=" hidden lg:flex w-[40%] ">
+                <video src="./assest/video-1.mp4" autoplay></video>
+            </div>
+            <div class=" hidden md:flex absolute -top-10 left-[20%]">
+                <img src="./assest/img-1.webp" class="w-full h-auto" alt="">
+            </div>
+            <div class="absolute -top-5  left-[65%] z-50">
+                <img src="./assest/img-2.webp" alt="" class="h-[500px]">
+            </div>
+            <div class=" hidden lg:flex w-[40%]">
+                <video src="./assest/video-2.mp4" autoplay></video>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
