@@ -18,6 +18,7 @@ x_icon.addEventListener('click', () => {
     toggle_menu_section.classList.toggle('hidden')
 
 })
+let t1 = gsap.timeline()
 
 gsap.to("body ", {
     backgroundColor: "white",
@@ -26,7 +27,7 @@ gsap.to("body ", {
     scrollTrigger: {
         trigger: "#section-2",
         start: "top 60%",
-        end: "top -100%",
+        end: "bottom 70%",
         scroll: "body",
         scrub: 1,
         // pin: true,
@@ -41,6 +42,20 @@ gsap.to("#section-1", {
         trigger: "#section-2",
         start: "top 60%",
         end: "top -100%",
+        scroll: "body",
+        scrub: 1,
+        // pin: true,
+        marker: true
+    }
+})
+gsap.to("#video_section", {
+    opacity: 0,
+    duration: 3,
+    delay: 1,
+    scrollTrigger: {
+        trigger: "#section-2",
+        start: "top 60%",
+        end: "top 100%",
         scroll: "body",
         scrub: 1,
         // pin: true,
