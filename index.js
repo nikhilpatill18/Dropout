@@ -94,7 +94,7 @@ gsap.from("#section-4", {
 gsap.from("#section-4 #document", {
     opacity: 0,
     y: -50,
-    // delay: 0.5,
+    delay: 1,
     scrollTrigger: {
         trigger: "#section-4",
         start: "top 40%",
@@ -105,7 +105,8 @@ gsap.from("#section-4 #document", {
 })
 gsap.from("#section-4 #instant", {
     opacity: 0,
-    // delay: 0.5,
+    delay: 1,
+
     scrollTrigger: {
         trigger: "#section-4",
         start: "top 40%",
@@ -117,7 +118,8 @@ gsap.from("#section-4 #instant", {
 gsap.from("#section-4 #para", {
     y: 10,
     opacity: 0,
-    // delay: 0.5,
+    delay: 1,
+
     scrollTrigger: {
         trigger: "#section-4",
         start: "top 40%",
@@ -129,11 +131,144 @@ gsap.from("#section-4 #para", {
 gsap.from("#section-4 #buttons", {
     y: 20,
     opacity: 0,
-    // delay: 0.5,
+    delay: 1,
+
     scrollTrigger: {
         trigger: "#section-4",
         start: "top 40%",
         end: "bottom 100%",
+        scroll: "body",
+        scrub: true
+    }
+})
+gsap.from("#section-5 #img ", {
+    y: 500,
+    // opacity: 0,
+    duration: 100,
+    delay: 10,
+    scrollTrigger: {
+        trigger: "#section-5",
+        start: "top 70%",
+        // end: "top 10%",
+        scroll: "body",
+        scrub: true
+    }
+})
+gsap.from(" #section-5 #video", {
+    y: 700,
+    duration: 100,
+    delay: 10,
+    scrollTrigger: {
+        trigger: "#section-5",
+        start: "top 70%",
+        // end: "top 10%",
+        scroll: "body",
+        scrub: true
+    }
+})
+
+
+gsap.from("#section-6", {
+    opacity: 0,
+    duration: 3,
+    y: 10,
+    delay: 2,
+    scrollTrigger: {
+        trigger: "#section-6",
+        start: "top 40%",
+        end: "bottom 100%",
+        scroll: "body",
+        scrub: true,
+        // pin: true,
+        marker: true
+    }
+})
+gsap.from("#section-6 #document", {
+    opacity: 0,
+    y: -50,
+    delay: 1,
+    scrollTrigger: {
+        trigger: "#section-6",
+        start: "top 40%",
+        end: "bottom 100%",
+        scroll: "body",
+        scrub: true
+    }
+})
+gsap.from("#section-6 #instant", {
+    opacity: 0,
+    delay: 1,
+
+    scrollTrigger: {
+        trigger: "#section-6",
+        start: "top 40%",
+        end: "bottom 100%",
+        scroll: "body",
+        scrub: true
+    }
+})
+gsap.from("#section-6 #para", {
+    y: 10,
+    opacity: 0,
+    delay: 1,
+
+    scrollTrigger: {
+        trigger: "#section-6",
+        start: "top 40%",
+        end: "bottom 100%",
+        scroll: "body",
+        scrub: true
+    }
+})
+gsap.from("#section-6 #buttons", {
+    y: 20,
+    opacity: 0,
+    delay: 1,
+
+    scrollTrigger: {
+        trigger: "#section-6",
+        start: "top 40%",
+        end: "bottom 100%",
+        scroll: "body",
+        scrub: true
+    }
+})
+
+
+
+gsap.from("#section-7 #img ", {
+    y: 500,
+    // opacity: 0,
+    duration: 100,
+    delay: 10,
+    scrollTrigger: {
+        trigger: "#section-7",
+        start: "top 70%",
+        // end: "top 10%",
+        scroll: "body",
+        scrub: true
+    }
+})
+gsap.from(" #section-7 #video", {
+    y: 600,
+    duration: 100,
+    delay: 10,
+    scrollTrigger: {
+        trigger: "#section-7",
+        start: "top 70%",
+        // end: "top 10%",
+        scroll: "body",
+        scrub: true
+    }
+})
+
+gsap.from("#hero #hero-1", {
+    scale: 0.8,
+    delay: 10,
+    scrollTrigger: {
+        trigger: "#hero",
+        start: "top 90%",
+        // end: "top 10%",
         scroll: "body",
         scrub: true
     }
