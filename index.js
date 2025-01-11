@@ -9,8 +9,6 @@ menu.addEventListener('click', () => {
         y: -30,
         duration: 0.5
     })
-
-
 })
 x_icon.addEventListener('click', () => {
     menu.classList.toggle('hidden')
@@ -20,15 +18,16 @@ x_icon.addEventListener('click', () => {
 })
 let t1 = gsap.timeline()
 
+
 gsap.to("body ", {
     backgroundColor: "white",
     duration: 3,
     delay: 1,
     scrollTrigger: {
         trigger: "#section-2",
-        start: "top 60%",
+        start: "top 65%",
         end: "bottom 70%",
-        scroll: "body",
+        scroll: "#section-2",
         scrub: 1,
         // pin: true,
         marker: true
@@ -36,12 +35,13 @@ gsap.to("body ", {
 })
 gsap.to("#section-1", {
     scale: 0,
+    opacity: 0,
     duration: 3,
     delay: 1,
     scrollTrigger: {
         trigger: "#section-2",
-        start: "top 60%",
-        end: "top -100%",
+        start: "top 70%",
+        end: "bottom 50%",
         scroll: "body",
         scrub: 2,
         // pin: true,
@@ -50,14 +50,14 @@ gsap.to("#section-1", {
 })
 gsap.to("#video_section", {
     opacity: 0,
-    duration: 3,
+    duration: 1,
     delay: 1,
     scrollTrigger: {
         trigger: "#section-2",
-        start: "top 60%",
+        start: "top 50%",
         end: "top 100%",
         scroll: "body",
-        scrub: 1,
+        scrub: 2,
         // pin: true,
         marker: true
     }
@@ -73,5 +73,68 @@ gsap.to("#section-3 h1", {
         scroll: "body",
         scrub: 2,
         pin: true
+    }
+})
+
+gsap.from("#section-4", {
+    opacity: 0,
+    duration: 3,
+    y: 10,
+    delay: 2,
+    scrollTrigger: {
+        trigger: "#section-4",
+        start: "top 40%",
+        end: "bottom 100%",
+        scroll: "body",
+        scrub: true,
+        // pin: true,
+        marker: true
+    }
+})
+gsap.from("#section-4 #document", {
+    opacity: 0,
+    y: -50,
+    // delay: 0.5,
+    scrollTrigger: {
+        trigger: "#section-4",
+        start: "top 40%",
+        end: "bottom 100%",
+        scroll: "body",
+        scrub: true
+    }
+})
+gsap.from("#section-4 #instant", {
+    opacity: 0,
+    // delay: 0.5,
+    scrollTrigger: {
+        trigger: "#section-4",
+        start: "top 40%",
+        end: "bottom 100%",
+        scroll: "body",
+        scrub: true
+    }
+})
+gsap.from("#section-4 #para", {
+    y: 10,
+    opacity: 0,
+    // delay: 0.5,
+    scrollTrigger: {
+        trigger: "#section-4",
+        start: "top 40%",
+        end: "bottom 100%",
+        scroll: "body",
+        scrub: true
+    }
+})
+gsap.from("#section-4 #buttons", {
+    y: 20,
+    opacity: 0,
+    // delay: 0.5,
+    scrollTrigger: {
+        trigger: "#section-4",
+        start: "top 40%",
+        end: "bottom 100%",
+        scroll: "body",
+        scrub: true
     }
 })
