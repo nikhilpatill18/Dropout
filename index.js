@@ -16,6 +16,17 @@ x_icon.addEventListener('click', () => {
     toggle_menu_section.classList.toggle('hidden')
 
 })
+console.log(window.scrollY)
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 500) {
+        document.querySelector("nav").style.backgroundColor = 'rgba(9, 9, 9, 0.8)'
+    }
+    else {
+        document.querySelector("nav").style.background = 'black '
+    }
+
+})
 let t1 = gsap.timeline()
 
 
