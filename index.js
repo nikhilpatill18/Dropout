@@ -28,3 +28,11 @@ window.addEventListener("scroll", () => {
         // document.querySelector("nav").style.height = '100px'
     }
 })
+
+
+const trustedd = document.querySelectorAll(".trusted-section div")
+
+trustedd.forEach((ele) => {
+    // ele.style.transform = 'translateX(-100  px)'
+})
+// document.querySelector(".trusted-section").style.transform = "translateX(-100px)"

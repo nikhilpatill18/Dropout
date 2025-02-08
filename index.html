@@ -22,18 +22,23 @@
     <!-- nav-bar section -->
     <nav class="bg-black sticky top-0 z-50">
         <div class="w-full  flex justify-between text-white overflow-hidden ">
-            <div class="flex gap-10 p-6 items-center ">
+            <div class="nav-left flex gap-10 p-6 items-center ">
                 <h3 class="text-xl font-bold">DropBox</h3>
                 <ul class="hidden lg:flex gap-5 font-semibold">
                     <li class="hover:text-blue-500">Products <i
-                            class="fa-solid fa-chevron-down text-sm font-semibold"></i> </li>
-                    <li class="hover:text-blue-500">Solution <i
-                            class="fa-solid fa-chevron-down text-sm font-semibold"></i></li>
+                            class="fa-solid fa-chevron-down text-sm font-semibold"></i>
+
+                    </li>
+                    <li class="hover:text-blue-500 ">Solution <i
+                            class="fa-solid fa-chevron-down text-sm font-semibold"></i>
+
+                    </li>
                     <li class="hover:text-blue-500">Enterprice</li>
                     <li class="hover:text-blue-500">Pricing</li>
                 </ul>
+
             </div>
-            <div class="flex justify-center items-center gap-6 mr-6 relative">
+            <div class="nav-right flex justify-center items-center gap-6 mr-6 relative">
                 <div>
                     <a href="#"> <i class="fa-solid fa-globe"></i></a>
                 </div>
@@ -96,6 +101,38 @@
             </div>
 
         </div>
+
+        <!-- menu option after hover vala h -->
+        <!-- 
+        <div class="flex w-screen absolute top-[100%]  justify-start gap-56 px-28 py-10 items-center bg-black "
+            id="solution">
+            <ul class="flex flex-col gap-5 text-white text-start ">
+                <li class="text-gray-500">Teams</li>
+                <li class=" ">Sales</li>
+                <li>Marketing</li>
+                <li>HR</li>
+                <li>IT</li>
+                <li>Creatives</li>
+            </ul>
+            <ul class="flex flex-col gap-5 text-white text-start ">
+                <li class="text-gray-500">Teams</li>
+                <li class=" ">Sales</li>
+                <li>Marketing</li>
+                <li>HR</li>
+                <li>IT</li>
+                <li>Creatives</li>
+            </ul>
+            <ul class="flex flex-col gap-5 text-white text-start ">
+                <li class="text-gray-500">Teams</li>
+                <li class=" ">Sales</li>
+                <li>Marketing</li>
+                <li>HR</li>
+                <li>IT</li>
+                <li>Creatives</li>
+            </ul>
+
+
+        </div> -->
     </nav>
 
     <!-- section -1 -->
@@ -164,13 +201,13 @@
 
     <!-- section-3 -->
 
-    <!-- <section id="section-3" class="overflow-hidden ">
+    <section id="section-3" class="overflow-hidden  ">
         <div class="mt-60">
             <h1 class="text-black font-bold md:text-[60vh] text-[40vh]">
                 EXPERIENCE
             </h1>
         </div>
-    </section> -->
+    </section>
 
     <!-- section-4 -->
 
@@ -305,7 +342,7 @@
     <!-- hero-section -->
     <section id="hero">
         <div>
-            <div class="h-full bg-gradient-to-b from-gray-700  to-black m-6 rounded-xl" id="hero-1">
+            <div class="h-full bg-gradient-to-b from-gray-900  to-black m-6 rounded-xl" id="hero-1">
                 <div class="flex flex-col  ">
                     <section id="sub-hero">
                         <div class="w-full pt-40 pb-40 py-56 text-white">
@@ -370,9 +407,10 @@
 
                     <!-- testimonial section -->
                     <div class="testimonial flex flex-shrink-0 mt-10 md:ml-48 ml-20">
-                        <div class="flex gap-20  overflow-x-auto " id="testimonial-sub">
+                        <div class="grid grid-cols-3 grid-rows-1 gap-5 max-md:flex max-md:w-full  overflow-x-auto"
+                            id="testimonial-sub">
                             <div
-                                class=" flex flex-col md:flex-row w-[70%] h-[100%] flex-shrink-0 bg-gray-700 rounded-lg p-2 ">
+                                class=" flex flex-col md:flex-row w-[100%] h-[100%] flex-shrink-0 bg-gray-700 rounded-lg p-2 ">
                                 <div class="h-[100%]">
                                     <a href="#"><img src="./assest/testimonial-1.png" alt=""
                                             class="h-[100%] w-[100%] "></a>
@@ -396,7 +434,7 @@
 
                             </div>
                             <div
-                                class="flex flex-col md:flex-row w-[70%] h-[100%] flex-shrink-0 bg-gray-700 rounded-lg p-2  ">
+                                class="flex flex-col md:flex-row w-[100%] h-[100%] flex-shrink-0 bg-gray-700 rounded-lg p-2  ">
                                 <div class="h-[100%]">
                                     <a href="#"><img src="./assest/testimonial-1.png" alt=""
                                             class="h-[100%] w-[100%]"></a>
@@ -420,7 +458,7 @@
 
                             </div>
                             <div
-                                class="flex flex-col md:flex-row w-[70%] h-[100%] flex-shrink-0 bg-gray-700 rounded-lg p-2  justify-stretch">
+                                class="flex flex-col md:flex-row w-[100%] h-[100%] flex-shrink-0 bg-gray-700 rounded-lg p-2  justify-stretch">
                                 <div class="h-[100%]">
                                     <a href="#"><img src="./assest/testimonial-1.png" alt=""
                                             class="h-[100%] w-[100%]"></a>
@@ -452,6 +490,39 @@
                         world
                     </p>
 
+                    <div
+                        class="trusted-section no-scrollbar flex w-full gap-52  overflow-x-auto items-center  relative">
+                        <div class="flex  min-w-fit ">
+                            <img src="./assest/trusted_1.svg" alt="">
+                        </div>
+                        <div class="flex  min-w-fit">
+                            <img src="./assest/trusted_2.svg" alt="">
+                        </div>
+                        <div class="flex  min-w-fit">
+                            <img src="./assest/trusted_3.svg" alt="">
+                        </div>
+                        <div class="flex  min-w-fit">
+                            <img src="./assest/trusted_4.svg" alt="">
+                        </div>
+                        <div class="flex  min-w-fit">
+                            <img src="./assest/trusted_5.svg" alt="">
+                        </div>
+                        <div class="flex  min-w-fit">
+                            <img src="./assest/trusted_6.svg" alt="">
+                        </div>
+                        <div class="flex  min-w-fit">
+                            <img src="./assest/trusted_7.svg" alt="">
+                        </div>
+                        <div class="flex  min-w-fit">
+                            <img src="./assest/trusted_8.svg" alt="">
+                        </div>
+                        <div class="flex  min-w-fit">
+                            <img src="./assest/trusted_9.svg" alt="">
+                        </div>
+                    </div>
+
+
+
 
 
                 </div>
@@ -467,35 +538,98 @@
     <!-- section-8 -->
 
     <section id="section-8">
-        <div class="flex justify-center items-center flex-col gap-40">
-            <h2 class="text-black text-3xl mx-10">Dropbox empowers across industries</h2>
+        <div class="flex justify-center items-center flex-col mt-40 ">
+            <h2 class="text-black text-3xl mx-10 font-bold">Dropbox empowers across industries</h2>
 
-            <div class="text-black lg:px-10">
-                <div class="grid lg:grid-cols-2 grid-rows-2 grid-cols-1 lg:grid-rows-1 max-lg:w-full gap-10">
-                    <div class="flex rounded-lg gap-5 justify-center items-center ">
-                        <div class="hidden md:flex w-[40%] ">
-                            <img src="assest/construction-hero@2x.webp" class="w-fit h-fit rounded-l-md" alt="">
+            <div class="text-black lg:px-10 mt-12">
+                <div
+                    class="grid grid-rows-6 grid-cols-1  lg:grid-cols-2 lg:grid-rows-3 max-lg:w-full gap-10 px-20 max-md:px-10 ">
+                    <div class="flex rounded-lg gap-5 justify-center items-center bg-[#EFECE6] group">
+                        <div class="hidden md:flex min-h-full w-[40%]">
+                            <img src="assest/construction-hero@2x.webp" class=" rounded-l-md" alt="">
                         </div>
-                        <div class="flex flex-col  justify-center items-start w-[60%] ">
+                        <div
+                            class="flex flex-col  justify-center items-start w-[60%] max-md:w-full max-md:px-5 max-md:py-2 max-md:gap-2 overflow-x-auto ">
                             <h2 class="font-bold">Construction</h2>
-                            <p class="text-gray-400">With dropbox for teams, you can store,access,preview,edit and
+                            <p class="text-gray-400 ">With dropbox for teams, you can
+                                store,access,preview,edit and
                                 transfer CAD, BIM, PDF and
                                 visual content files from anywhere </p>
+                            <a href="#" class="">Learn more <i
+                                    class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-all"></i> </a>
+
+                        </div>
+
+                    </div>
+                    <div class="flex rounded-xl gap-5 justify-center items-center bg-[#EFECE6] group ">
+                        <div class="hidden md:flex min-h-full w-[40%]">
+                            <img src="assest/The-Luupe-Genya-Oneall.webp" class=" rounded-l-md" alt="">
+                        </div>
+                        <div
+                            class="flex flex-col  justify-center items-start w-[60%] max-md:w-full max-md:px-5 max-md:py-2 max-md:gap-2 ">
+                            <h2 class="font-bold">Media</h2>
+                            <p class="text-gray-400">Create a flexible media workspace that connects your teams,content
+                                , tools together </p>
                             <a href="#" class="group">Learn more <i
                                     class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-all"></i> </a>
 
                         </div>
 
                     </div>
-                    <div class="flex rounded-lg gap-5 justify-center items-center ">
-                        <div class="hidden md:flex w-[40%]">
-                            <img src="assest/The-Luupe-Genya-Oneall.webp" class="w-fit h-fit rounded-l-md" alt="">
+                    <div class="flex rounded-xl gap-5 justify-center items-center bg-[#EFECE6] group ">
+                        <div class="hidden md:flex min-h-full w-[40%]">
+                            <img src="assest/The-Luupe-Genya-Oneall.webp" class=" rounded-l-md" alt="">
                         </div>
-                        <div class="flex flex-col  justify-center items-start w-[60%]">
-                            <h2 class="font-bold">Construction</h2>
-                            <p class="text-gray-400">With dropbox for teams, you can store,access,preview,edit and
-                                transfer CAD, BIM, PDF and
-                                visual content files from anywhere </p>
+                        <div
+                            class="flex flex-col  justify-center items-start w-[60%] max-md:w-full max-md:px-5 max-md:py-2 max-md:gap-2 ">
+                            <h2 class="font-bold">Technology</h2>
+                            <p class="text-gray-400">Product ideation to development, streamline technology workflows so
+                                you can focus on turning great ideas into product people love. </p>
+                            <a href="#" class="group">Learn more <i
+                                    class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-all"></i> </a>
+
+                        </div>
+
+                    </div>
+                    <div class="flex rounded-xl gap-5 justify-center items-center bg-[#EFECE6] group ">
+                        <div class="hidden md:flex min-h-full w-[40%]">
+                            <img src="assest/The-Luupe-Genya-Oneall.webp" class=" rounded-l-md" alt="">
+                        </div>
+                        <div
+                            class="flex flex-col  justify-center items-start w-[60%] max-md:w-full max-md:px-5 max-md:py-2 max-md:gap-2 ">
+                            <h2 class="font-bold">Professionals servies</h2>
+                            <p class="text-gray-400">Makes client happier with easy collaboration boosted productivity,
+                                and one organized place to get one thing done </p>
+                            <a href="#" class="group">Learn more <i
+                                    class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-all"></i> </a>
+
+                        </div>
+
+                    </div>
+                    <div class="flex rounded-xl gap-5 justify-center items-center bg-[#EFECE6] group ">
+                        <div class="hidden md:flex min-h-full w-[40%]">
+                            <img src="assest/The-Luupe-Genya-Oneall.webp" class=" rounded-l-md" alt="">
+                        </div>
+                        <div
+                            class="flex flex-col  justify-center items-start w-[60%] max-md:w-full max-md:px-5 max-md:py-2 max-md:gap-2 ">
+                            <h2 class="font-bold">Manufacturing</h2>
+                            <p class="text-gray-400">Desgin and enginerring teams easily collaborate, managing complex
+                                reviews and sharing files seamlessly </p>
+                            <a href="#" class="group">Learn more <i
+                                    class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-all"></i> </a>
+
+                        </div>
+
+                    </div>
+                    <div class="flex rounded-xl gap-5 justify-center items-center bg-[#EFECE6] group ">
+                        <div class="hidden md:flex min-h-full w-[40%]">
+                            <img src="assest/The-Luupe-Genya-Oneall.webp" class=" rounded-l-md" alt="">
+                        </div>
+                        <div
+                            class="flex flex-col  justify-center items-start w-[60%] max-md:w-full max-md:px-5 max-md:py-2 max-md:gap-2 ">
+                            <h2 class="font-bold">Education</h2>
+                            <p class="text-gray-400">Power student learning, faculty research, and staff operation on
+                                Dropbox Education's secure cloud collaboration platform </p>
                             <a href="#" class="group">Learn more <i
                                     class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-all"></i> </a>
 
@@ -516,7 +650,7 @@
 
     <section id="section-9">
 
-        <div class=" px-20 py-10 bg-[#EFECE6] mt-80 ">
+        <div class=" px-20 py-10 bg-[#EFECE6] mt-52 ">
 
             <div class="container flex flex-col  justify-center items-center gap-16 mb-16 py-20">
                 <p class="text-black font-medium font-serif text-4xl text-center">Discover,learn, thrive with dropbox
