@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <style>
     #testimonial-sub::-webkit-scrollbar {
@@ -24,12 +25,12 @@
             <div class="flex gap-10 p-6 items-center ">
                 <h3 class="text-xl font-bold">DropBox</h3>
                 <ul class="hidden lg:flex gap-5 font-semibold">
-                    <li class="hover:text-blue-600">Products <i
+                    <li class="hover:text-blue-500">Products <i
                             class="fa-solid fa-chevron-down text-sm font-semibold"></i> </li>
-                    <li class="hover:text-blue-600">Solution <i
+                    <li class="hover:text-blue-500">Solution <i
                             class="fa-solid fa-chevron-down text-sm font-semibold"></i></li>
-                    <li class="hover:text-blue-600">Enterprice</li>
-                    <li class="hover:text-blue-600">Pricing</li>
+                    <li class="hover:text-blue-500">Enterprice</li>
+                    <li class="hover:text-blue-500">Pricing</li>
                 </ul>
             </div>
             <div class="flex justify-center items-center gap-6 mr-6 relative">
@@ -37,16 +38,16 @@
                     <a href="#"> <i class="fa-solid fa-globe"></i></a>
                 </div>
                 <ul class="flex gap-8 text-sm font-bold">
-                    <li class="hidden lg:flex">
+                    <li class="hidden lg:flex hover:text-blue-500">
                         <a href="#">Contact Sales</a>
                     </li>
-                    <li class="hidden lg:flex">
+                    <li class="hidden lg:flex hover:text-blue-500">
                         <a href="#">Get app <i class="fa-solid fa-chevron-down text-sm font-semibold"></i> </a>
                     </li>
-                    <li>
+                    <li class="hover:text-blue-500">
                         <a href="#">Sign up</a>
                     </li>
-                    <li>
+                    <li class="hover:text-blue-500">
                         <a href="#">Log in</a>
                     </li>
                 </ul>
@@ -98,8 +99,8 @@
     </nav>
 
     <!-- section -1 -->
-    <section id="section-1" style="background-attachment: fixed !important;">
-        <div class="w-full flex justify-center items-center mt-24">
+    <section id="section-1">
+        <div class="w-full flex justify-center items-center mt-24 h-[500px]">
             <div class="flex flex-col  text-white p-10 gap-6">
 
                 <h2 class="text-5xl font-bold text-center">
@@ -140,7 +141,7 @@
     <!-- section-2 -->
 
     <section id="section-2">
-        <div class="flex relative mt-10 justify-center items-center">
+        <div class="flex relative mt-10 justify-center items-center ">
             <div class="hidden md:flex w-full  relative justify-between " id="video_section">
                 <div class=" hidden lg:flex w-[40%] ">
                     <video src="./assest/video-1.mp4" autoplay></video>
@@ -150,9 +151,9 @@
 
                 </div>
             </div>
-            <div class=" hidden md:flex absolute -top-10 left-[20%] overflow-hidden">
-                <img src="./assest/img-1.webp" class="w-full h-auto " alt="">
-                <img src="./assest/img-2.webp" alt="" class=" absolute h-[500px]">
+            <div class=" hidden md:flex absolute -top-10 self-center overflow-hidden ml-40">
+                <img src="./assest/img-1.webp" class="w-[60%]" alt="">
+                <img src="./assest/img-2.webp" alt="" class="h-[500px]">
             </div>
             <div class=" md:hidden ">
                 <img src="./assest/img-2.webp" alt="" class="h-[500px]">
@@ -163,13 +164,13 @@
 
     <!-- section-3 -->
 
-    <section id="section-3" class="overflow-hidden " style="background-attachment: fixed;">
+    <!-- <section id="section-3" class="overflow-hidden ">
         <div class="mt-60">
             <h1 class="text-black font-bold md:text-[60vh] text-[40vh]">
                 EXPERIENCE
             </h1>
         </div>
-    </section>
+    </section> -->
 
     <!-- section-4 -->
 
@@ -371,7 +372,7 @@
                     <div class="testimonial flex flex-shrink-0 mt-10 md:ml-48 ml-20">
                         <div class="flex gap-20  overflow-x-auto " id="testimonial-sub">
                             <div
-                                class=" flex flex-col md:flex-row w-[70%] h-[100%] flex-shrink-0 bg-gray-700 rounded-lg p-2  justify-stretch">
+                                class=" flex flex-col md:flex-row w-[70%] h-[100%] flex-shrink-0 bg-gray-700 rounded-lg p-2 ">
                                 <div class="h-[100%]">
                                     <a href="#"><img src="./assest/testimonial-1.png" alt=""
                                             class="h-[100%] w-[100%] "></a>
@@ -395,7 +396,7 @@
 
                             </div>
                             <div
-                                class="flex flex-col md:flex-row w-[70%] h-[100%] flex-shrink-0 bg-gray-700 rounded-lg p-2  justify-stretch">
+                                class="flex flex-col md:flex-row w-[70%] h-[100%] flex-shrink-0 bg-gray-700 rounded-lg p-2  ">
                                 <div class="h-[100%]">
                                     <a href="#"><img src="./assest/testimonial-1.png" alt=""
                                             class="h-[100%] w-[100%]"></a>
@@ -447,6 +448,12 @@
 
                     </div>
 
+                    <p class="text-center font-semibold text-gray-200 mt-40 ">Trusted by the biggest companies in the
+                        world
+                    </p>
+
+
+
                 </div>
 
 
@@ -457,9 +464,232 @@
     </section>
 
 
+    <!-- section-8 -->
+
+    <section id="section-8">
+        <div class="flex justify-center items-center flex-col gap-40">
+            <h2 class="text-black text-3xl mx-10">Dropbox empowers across industries</h2>
+
+            <div class="text-black lg:px-10">
+                <div class="grid lg:grid-cols-2 grid-rows-2 grid-cols-1 lg:grid-rows-1 max-lg:w-full gap-10">
+                    <div class="flex rounded-lg gap-5 justify-center items-center ">
+                        <div class="hidden md:flex w-[40%] ">
+                            <img src="assest/construction-hero@2x.webp" class="w-fit h-fit rounded-l-md" alt="">
+                        </div>
+                        <div class="flex flex-col  justify-center items-start w-[60%] ">
+                            <h2 class="font-bold">Construction</h2>
+                            <p class="text-gray-400">With dropbox for teams, you can store,access,preview,edit and
+                                transfer CAD, BIM, PDF and
+                                visual content files from anywhere </p>
+                            <a href="#" class="group">Learn more <i
+                                    class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-all"></i> </a>
+
+                        </div>
+
+                    </div>
+                    <div class="flex rounded-lg gap-5 justify-center items-center ">
+                        <div class="hidden md:flex w-[40%]">
+                            <img src="assest/The-Luupe-Genya-Oneall.webp" class="w-fit h-fit rounded-l-md" alt="">
+                        </div>
+                        <div class="flex flex-col  justify-center items-start w-[60%]">
+                            <h2 class="font-bold">Construction</h2>
+                            <p class="text-gray-400">With dropbox for teams, you can store,access,preview,edit and
+                                transfer CAD, BIM, PDF and
+                                visual content files from anywhere </p>
+                            <a href="#" class="group">Learn more <i
+                                    class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-all"></i> </a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- section-9m cards -->
+
+    <section id="section-9">
+
+        <div class=" px-20 py-10 bg-[#EFECE6] mt-80 ">
+
+            <div class="container flex flex-col  justify-center items-center gap-16 mb-16 py-20">
+                <p class="text-black font-medium font-serif text-4xl text-center">Discover,learn, thrive with dropbox
+                </p>
+                <div class="grid grid-cols-3 grid-rows-1 gap-5 max-md:flex max-md:w-full  overflow-x-auto ">
+                    <div
+                        class="flex flex-col gap-7 justify-between group p-5 bg-white rounded-lg hover:cursor-pointer max-md:min-w-[300px]  ">
+                        <img src="./assest/card-1.png" alt="" class="rounded-md">
+                        <a href="#" class="text-gray-600 font-bold">Article</a>
+                        <p class="text-black font-semibold text-justify">Study: Here's how many hours we lose to
+                            distraction- and how
+                            to get out
+                            focus back</p>
+                        <p class="text-gray-600 text-justify">Four our study, Economist Impact included knowledge
+                            workers
+                            globally-and found that, no
+                            matter where the people work, there's a siginificant cost to focus around the world</p>
+                        <a href="#" class="text-black font-semibold underline group-hover:underline-offset-4">Read
+                            article</a>
+
+                    </div>
+                    <div
+                        class="flex flex-col justify-between gap-7 group p-5 bg-white rounded-lg hover:cursor-pointer max-md:min-w-[300px]  ">
+                        <img src="./assest/card-2.png" alt="" class="rounded-md">
+                        <a href="#" class="text-gray-600 font-bold">Article</a>
+                        <p class="text-black font-semibold text-justify">Dropbox teams up with McLaren Racing as an
+                            offical Technology Partner of McLaren Formula 1 Team</p>
+                        <p class="text-gray-600 text-justify">Dropbox brings simplified sharing collaboration, and
+                            organization to the McLaren Formula 1 Team</p>
+                        <a href="#" class="text-black font-semibold underline group-hover:underline-offset-4">Read
+                            article</a>
+
+                    </div>
+                    <div
+                        class="flex flex-col justify-between gap-7 group p-5 bg-white rounded-lg hover:cursor-pointer max-md:min-w-[300px]  ">
+                        <img src="./assest/card-3.png" alt="" class="rounded-md">
+                        <a href="#" class="text-gray-600 font-bold">Article</a>
+                        <p class="text-black font-semibold text-justify">The beat way to share photos with family and
+                            friends</p>
+                        <p class="text-gray-600 text-justify">Four our study, Economist Impact included knowledge
+                            Dont't use precious photos.Save them sahre them with loved ones-for free.Here's ans
+                            easy-to-follow guide to sharing and sorting photos with DropBox
+                        </p>
+                        <a href="#" class="text-black font-semibold underline group-hover:underline-offset-4">Read
+                            article</a>
+
+                    </div>
+
+                </div>
+                <a href="#" class="text-blue-500 font-semibold hover:text-blue-700 hover:underline">View more
+                    resources</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="bg-black flex flex-col justify-center items-center">
+
+
+            <div
+                class=" h-full  grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 lg:flex lg:justify-center lg:gap-20 justify-between gap-10 items-start  px-0 pt-16 max-sm:px-2">
+                <div>
+                    <p class="font-bold text-xl max-sm:text-sm">DropBox</p>
+                    <ul class="list-none flex flex-col gap-2 mt-5 font-semibold max-sm:text-sm">
+                        <li class="hover:underline"><a href="#">Desktop app</a></li>
+                        <li class="hover:underline"><a href="#">Mobile app</a></li>
+                        <li class="hover:underline"><a href="#">Integration</a></li>
+                        <li class="hover:underline"><a href="#">Feature </a></li>
+                        <li class="hover:underline"><a href="#">Solution</a></li>
+                        <li class="hover:underline"><a href="#">Security</a></li>
+                        <li class="hover:underline"><a href="#">Early access</a></li>
+                        <li class="hover:underline"><a href="#">Templetes</a></li>
+                        <li class="hover:underline"><a href="#">Free tools</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <p class="font-bold text-xl max-sm:text-sm">Products</p>
+                    <ul class="list-none flex flex-col gap-2 mt-5 font-semibold max-sm:text-sm">
+                        <li class="hover:underline"><a href="#">Plus</a></li>
+                        <li class="hover:underline"><a href="#">Professional</a></li>
+                        <li class="hover:underline"><a href="#">Busniess</a></li>
+                        <li class="hover:underline"><a href="#">Enter price</a></li>
+                        <li class="hover:underline"><a href="#">Dash</a></li>
+                        <li class="hover:underline"><a href="#">Recalim.ai</a></li>
+                        <li class="hover:underline"><a href="#">Dropbox Sign</a></li>
+                        <li class="hover:underline"><a href="#">DocSend</a></li>
+                        <li class="hover:underline"><a href="#">Plans </a></li>
+                        <li class="hover:underline"><a href="#">Product update</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <p class="font-bold text-xl max-sm:text-sm">Feature</p>
+                    <ul class="list-none flex flex-col gap-2 mt-5 font-semibold max-sm:text-sm">
+                        <li class="hover:underline"><a href="#">Send large file</a></li>
+                        <li class="hover:underline"><a href="#">Send long file</a></li>
+                        <li class="hover:underline"><a href="#">Cloud photo storage</a></li>
+                        <li class="hover:underline"><a href="#">Secure file transfer</a></li>
+                        <li class="hover:underline"><a href="#">Password manager</a></li>
+                        <li class="hover:underline"><a href="#">Cloud backup</a></li>
+                        <li class="hover:underline"><a href="#">Edit PDFs</a></li>
+                        <li class="hover:underline"><a href="#">Electronic signature</a></li>
+                        <li class="hover:underline"><a href="#">Screen recorder</a></li>
+                        <li class="hover:underline"><a href="#">Convert to PDF</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <p class="font-bold text-xl max-sm:text-sm">Support</p>
+                    <ul class="list-none flex flex-col gap-2 mt-5 font-semibold max-sm:text-sm">
+                        <li class="hover:underline"><a href="#">Help center</a></li>
+                        <li class="hover:underline"><a href="#">Contact us</a></li>
+                        <li class="hover:underline"><a href="#">privacy & terms</a></li>
+                        <li class="hover:underline"><a href="#">Cookies policy</a></li>
+                        <li class="hover:underline"><a href="#">AI principles</a></li>
+                        <li class="hover:underline"><a href="#">Sitemap</a></li>
+                        <li class="hover:underline"><a href="#">Learing resources</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <p class="font-bold text-xl max-sm:text-sm">Resources</p>
+                    <ul class="list-none flex flex-col gap-2 mt-5 font-semibold max-sm:text-sm">
+                        <li class="hover:underline"><a href="#">Blog</a></li>
+                        <li class="hover:underline"><a href="#">Customer stories</a></li>
+                        <li class="hover:underline"><a href="#">Resource libary</a></li>
+                        <li class="hover:underline"><a href="#">Devloper</a></li>
+                        <li class="hover:underline"><a href="#">Community fourms</a></li>
+                        <li class="hover:underline"><a href="#">Referrals</a></li>
+                        <li class="hover:underline"><a href="#">Reseller partner</a></li>
+                        <li class="hover:underline"><a href="#">Find partner</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <p class="font-bold text-xl max-sm:text-sm">Company</p>
+                    <ul class="list-none flex flex-col gap-2 mt-5 font-semibold max-sm:text-sm">
+                        <li class="hover:underline"><a href="#">About us </a></li>
+                        <li class="hover:underline"><a href="#">Jobs</a></li>
+                        <li class="hover:underline"><a href="#">Investor relation</a></li>
+                        <li class="hover:underline"><a href="#">ESG</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="flex justify-start items-start  mt-10 gap-10">
+                <span class="hover:bg-gray-800 p-2 transition-colors duration-200"><i
+                        class="fa-brands fa-x-twitter"></i></span>
+                <span class="hover:bg-gray-800 p-2 transition-colors duration-200">
+                    <i class="fa-brands fa-facebook"></i>
+                </span>
+                <span class="hover:bg-gray-800 p-2 transition-colors duration-200">
+                    <i class="fa-brands fa-youtube"></i>
+                </span>
+
+
+            </div>
+        </div>
+
+    </footer>
 
 
 
+
+
+    <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
@@ -468,6 +698,7 @@
         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="index.js"></script>
+    <script src="animation.js"></script>
 
 
 </body>
