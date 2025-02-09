@@ -30,9 +30,15 @@ window.addEventListener("scroll", () => {
 })
 
 
-const trustedd = document.querySelectorAll(".trusted-section div")
+const navoption = document.querySelectorAll(".solution,.products,.get-app")
+navoption.forEach(option => {
+    option.addEventListener("mouseover", () => {
 
-trustedd.forEach((ele) => {
-    // ele.style.transform = 'translateX(-100  px)'
+        document.querySelector("nav").style.backgroundColor = 'black'
+
+    })
+    option.addEventListener("mouseout", () => {
+        document.querySelector("nav").style.backgroundColor = 'rgba(9, 9, 9, 0.8)'
+
+    })
 })
-// document.querySelector(".trusted-section").style.transform = "translateX(-100px)"
