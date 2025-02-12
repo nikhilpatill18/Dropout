@@ -14,6 +14,15 @@
 //     },
 //     pinType: document.querySelector("body").style.transform ? "transform" : "fixed"
 // });
+const lenis = new Lenis({
+    duration: 3
+})
+function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+}
+requestAnimationFrame(raf)
+
 
 let t1 = gsap.timeline()
 
@@ -272,3 +281,86 @@ gsap.from("#hero #hero-1", {
         scrub: true
     }
 })
+
+// section -8 animation
+function section8Animation() {
+    let sc_8t = gsap.timeline(
+        {
+            scrollTrigger: {
+                trigger: "#section-8",
+                scroller: "body",
+                start: "top 70%",
+                scrub: true,
+                end: "top 0%"
+            }
+        }
+    )
+
+
+    sc_8t.from("#section-8>div>h2", {
+        y: -20,
+        duration: 2,
+        opacity: 0
+    })
+    sc_8t.from("#section-8>div>div>div .left", {
+        x: -20,
+        duration: 3,
+        opacity: 0
+    })
+    sc_8t.from("#section-8>div>div>div .right", {
+        x: 30,
+        duration: 3,
+        opacity: 0
+    })
+}
+section8Animation()
+
+
+// animation for the section-9
+
+
+function section9Aniamtion() {
+    let sec_9t = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#section-9",
+            scroller: "body",
+            start: "top 70%",
+            scrub: true,
+            end: "top 0%"
+        }
+    })
+    sec_9t.from("#section-9", {
+        y: -40,
+        delay: 1,
+        duration: 5,
+        opacity: 0
+    })
+    sec_9t.from("#section-9>div>div>p", {
+        y: -40,
+        delay: 0.5,
+        duration: 5,
+
+        opacity: 0
+    })
+    sec_9t.from("#section-9>div>div>div>.left", {
+        x: -40,
+        delay: 0.5,
+        duration: 3,
+        opacity: 0
+    })
+    sec_9t.from("#section-9>div>div>div>.right", {
+        x: 40,
+        delay: 0.5,
+        duration: 3,
+        opacity: 0
+    })
+    sec_9t.from("#section-9>div>div>div>.middle", {
+        y: -40,
+        delay: 0.5,
+        duration: 3,
+        opacity: 0
+    })
+
+}
+section9Aniamtion()
+
