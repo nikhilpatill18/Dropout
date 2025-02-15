@@ -129,7 +129,7 @@ const animateleft = () => {
     document.querySelector(".trusted-section>div").style.transition = 'transform 10s linear'
 }
 const animaright = () => {
-    document.querySelector(".trusted-section>div").style.transform = 'translateX(100%)'
+    document.querySelector(".trusted-section>div").style.transform = 'translateX(10 0%)'
     document.querySelector(".trusted-section>div").style.transition = 'transform 10s linear'
 
 }
