@@ -135,17 +135,17 @@ const animaright = () => {
 }
 
 let a = true
-setInterval(() => {
+// setInterval(() => {
 
-    if (a) {
-        animateleft()
-        a = false
-    }
-    else {
-        animaright()
-        a = true
-    }
+//     if (a) {
+//         animateleft()
+//         a = false
+//     }
+//     else {
+//         animaright()
+//         a = true
+//     }
 
 
 
-}, 10000);
+// }, 10000);
