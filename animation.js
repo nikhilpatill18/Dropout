@@ -15,7 +15,7 @@
 //     pinType: document.querySelector("body").style.transform ? "transform" : "fixed"
 // });
 const lenis = new Lenis({
-    duration: 3
+    duration: 1
 })
 function raf(time) {
     lenis.raf(time)

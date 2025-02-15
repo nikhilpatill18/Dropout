@@ -17,10 +17,11 @@ x_icon.addEventListener('click', () => {
 
 })
 // console.log(window.scrollY)
+// console.log(window.location.pathname)
 
 
-if (window.location.pathname === "/index.html") {
-    console.log("User is on the Dashboard page.");
+if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
+    // console.log("User is on the Dashboard page.");
     window.addEventListener("scroll", () => {
         if (window.scrollY > 500) {
             document.querySelector("nav").style.backgroundColor = 'rgba(9, 9, 9, 0.8)'
@@ -53,5 +54,69 @@ if (window.location.pathname === "/index.html") {
 }
 
 
+// const line1 = document.querySelector(".trusted-section")
 
 
+
+
+// const imagepath = [
+//     './assest/trusted_1.svg',
+//     './assest/trusted_2.svg',
+//     "./assest/trusted_3.svg",
+//     "./assest/trusted_4.svg",
+//     "./assest/trusted_5.svg",
+//     "./assest/trusted_6.svg",
+//     "./assest/trusted_7.svg",
+//     "./assest/trusted_8.svg",
+//     "./assest/trusted_9.svg",
+// ]
+
+
+
+// function addelement(index) {
+//     const div = document.createElement('div')
+//     div.classList.add('flex', 'min-w-fit')
+//     div.innerHTML = `<img src="${imagepath[index]}" alt="company">`
+//     // console.log(div)
+//     line1.appendChild(div)
+//     div.style.transform = `transalteX(${500}px)`
+//     div.style.transition = 'transform 1s linear'
+
+// }
+
+// let start = 0
+
+// setInterval(() => {
+//     if (start == imagepath.length) {
+//         start = 0
+//     }
+//     addelement(start)
+//     start = start + 1
+
+// }, 100);
+
+// for (let index = 0; index < 9; index++) {
+//     addelement(index)
+// }
+
+// const line2 = document.querySelectorAll(".trusted-section div")
+
+
+// let start = 0
+// function animateleft() {
+//     if (start == line2.length) {
+//         start = 0
+//     }
+//     else {
+//         // console.log(start)
+//         line2[start].style.transform = `translateX(-${1000}px)`
+//         line2[start].style.transition = 'transform 1s linear '
+//         start = start + 1
+//     }
+// }
+// setInterval(() => {
+//     animateleft()
+//     start = 0
+//     console.log("hi")
+
+// }, 0);
