@@ -54,7 +54,8 @@ if (window.location.pathname === "/index.html" || window.location.pathname === "
 }
 
 
-// const line1 = document.querySelector(".trusted-section")
+const line1 = document.querySelector(".trusted-section>div")
+console.log(line1)
 
 
 
@@ -73,16 +74,16 @@ if (window.location.pathname === "/index.html" || window.location.pathname === "
 
 
 
-// function addelement(index) {
-//     const div = document.createElement('div')
-//     div.classList.add('flex', 'min-w-fit')
-//     div.innerHTML = `<img src="${imagepath[index]}" alt="company">`
-//     // console.log(div)
-//     line1.appendChild(div)
-//     div.style.transform = `transalteX(${500}px)`
-//     div.style.transition = 'transform 1s linear'
+function addelement(index) {
+    const div = document.createElement('div')
+    div.classList.add('flex', 'min-w-fit')
+    div.innerHTML = `<img src="${imagepath[index]}" alt="company">`
+    // console.log(div)
+    line1.appendChild(div)
+    div.style.transform = `transalteX(${500}px)`
+    div.style.transition = 'transform 1s linear'
 
-// }
+}
 
 // let start = 0
 
@@ -120,3 +121,31 @@ if (window.location.pathname === "/index.html" || window.location.pathname === "
 //     console.log("hi")
 
 // }, 0);
+
+
+
+const animateleft = () => {
+    document.querySelector(".trusted-section>div").style.transform = 'translateX(-200%)'
+    document.querySelector(".trusted-section>div").style.transition = 'transform 10s linear'
+}
+const animaright = () => {
+    document.querySelector(".trusted-section>div").style.transform = 'translateX(100%)'
+    document.querySelector(".trusted-section>div").style.transition = 'transform 10s linear'
+
+}
+
+let a = true
+setInterval(() => {
+
+    if (a) {
+        animateleft()
+        a = false
+    }
+    else {
+        animaright()
+        a = true
+    }
+
+
+
+}, 10000);
