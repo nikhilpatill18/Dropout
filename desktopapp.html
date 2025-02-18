@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find Your Dropbox Plan | Get 30 Days Free Trial</title>
+    <title>Dropbox Desktop Experience for macOS & Windows</title>
     <link rel="icon" href="./assest/dropbox-sign-logo.svg" type="image/svg">
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -13,6 +13,7 @@
 </head>
 
 <body class="overflow-x-hidden">
+
 
     <nav class="bg-white  sticky top-0 z-50">
         <div class="w-full  flex justify-between text-white overflow-hidden ">
@@ -181,10 +182,10 @@
                         <a href="signup.html">Log in</a>
                     </li>
                 </ul>
-                <button class=" hidden max-md:hidden  bg-white outline-none font-bold text-black p-2 rounded-lg">
+                <button class=" max-md:hidden flex bg-blue-600 outline-none font-bold text-white p-2 rounded-lg"
+                    onclick="togetstarted()">
                     Get Started
                 </button>
-
                 <span class="menu_icon lg:hidden">
                     <i class="fa-solid fa-bars"></i>
                 </span>
@@ -218,10 +219,10 @@
                         Get app <i class="fa-solid fa-chevron-down text-sm font-semibold"></i>
                     </li>
                 </ul>
-                <!-- <button
-                    class=" hidden max-md:flex hidden bg-white text-black w-full rounded-lg p-4 text-center justify-center items-center">
+                <button
+                    class="  max-md:flex hidden bg-white text-black w-full rounded-lg p-4 text-center justify-center items-center">
                     Get Started
-                </button> -->
+                </button>
 
             </div>
 
@@ -231,239 +232,174 @@
 
     </nav>
 
+
     <main>
 
-        <div class="flex flex-col sm:mx-20 text-center gap-5 items-center  mt-20">
+        <section id="section-1">
 
-            <p class="text-4xl font-semibold">Go from idea to done with Dropbox</p>
-            <p class="font-normal">Store and share files. Sign and send documents. All with Dropbox.</p>
+            <div class="flex max-md:flex-col  justify-start items-start bg-gray-100 ">
+                <div class="flex flex-col  px-10 w-[40%] gap-10 py-20 max-md:w-full ">
+                    <div class="flex flex-col justify-start gap-5 ">
+                        <h2 class="text-4xl font-semibold max-sm:text-xl max-sm:font-bold">The Dropbox desktop app</h2>
+                        <p class="text-justify font-medium">Save hard drive space, share and edit files, and send for
+                            signature—all
+                            without the
+                            distraction of countless browser tabs.</p>
+                        <p class="font-medium">Get desktop app now.</p>
+                    </div>
+                    <div class="flex flex-col justify-start items-start gap-10">
 
-            <div class="flex justify-start items-center  gap-5 text-[20px] font-light ">
-                <input type="radio" name="billoption" id="billmontly" class="size-5 border-black"
-                    onchange="onchangeprice()">
-                <label for="billmontly">Billed monthly</label>
-                <input type="radio" name="billoption" id="billyearly" class="size-5 text-black" checked
-                    onchange="onchangeprice()">
-                <label for="billyearly">Billed yearly</label>
-            </div>
+                        <button
+                            class="flex justify-center max-sm:gap-1 gap-5  items-center w-fit bg-blue-600 text-white px-5 py-2 max-sm:text-sm text-2xl rounded-xl group">
+                            Install <span><i
+                                    class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform duration-100"></i></span>
+                        </button>
 
-
-
-            <!-- priceing section -->
-            <div class="prize-option flex flex-wrap  gap-10 md:justify-center w-full mt-10">
-
-
-
-
-                <!-- first pricing -->
-                <div
-                    class="plus-price h-[100vh] flex bg-[#FAF9F7] flex-col px-5  py-5 justify-star items-start gap-10 max-md:w-full max-md:h-fit rounded-md">
-                    <div class="flex flex-col w-full justify-start items-start gap-5">
-                        <p class="text-gray-600">For Personal use</p>
-                        <p class="text-black font-semibold text-2xl">Plus</p>
-                        <p class="price text-black font-semibold text-xl">$9.99/month</p>
-                        <div
-                            class="flex justify-between items-center   min-w-full  bg-blue-600 px-5 text-white py-2 rounded-lg group font-semibold border-double border-2 border-blue-500">
-                            <p>
-                                Buy now
-                            </p>
-                            <span>
-                                <i
-                                    class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-all duration-200"></i>
-                            </span>
-                        </div>
+                        <a href="#"
+                            class=" flex justify-center max-sm:gap-1 gap-2  items-center w-fit font-medium underline group">Learn
+                            more <span><i
+                                    class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform duration-100"></i></span></a>
 
                     </div>
-
-                    <ul class="flex flex-col justify-start items-start gap-5">
-                        <li>1 User</li>
-                        <li class="border-b-2 border-dotted border-black"><span class="font-bold">2 TB</span> of storage
-                        </li>
-                        <li>Connect all your device</li>
-                        <li>Transfer file upto <span class="font-bold">50 GB</span></li>
-                        <li class="border-b-2 border-dotted border-black"><span class="font-bold decoration-dotted">30
-                                Days</span> to
-                            restore deleted file
-                        </li>
-                        <li>Edit PDFs and get signature</li>
-                    </ul>
 
                 </div>
 
-                <!-- second pricing -->
                 <div
-                    class="essentials-price h-[100vh] flex bg-[#F7F5F2] flex-col px-5 py-5 justify-star items-start gap-10 max-md:w-full max-md:h-fit rounded-md">
-                    <div class="flex flex-col w-full justify-start items-start gap-5">
-                        <p class="text-gray-600">For professional</p>
-                        <p class="text-black font-semibold text-2xl">Essentials</p>
-                        <p class="price text-black font-semibold text-xl">$16.58/month</p>
-                        <div
-                            class="flex justify-between items-center   min-w-full  bg-blue-600 px-5 text-white py-2 rounded-lg group font-semibold border-double border-2 border-blue-500">
-                            <p>
-                                Try for free
-                            </p>
-                            <span>
-                                <i
-                                    class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-all duration-200"></i>
-                            </span>
-                        </div>
-                        <a href="#" class="group underline font-bold">or buy now <span>
-                                <i
-                                    class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-all duration-200"></i>
-                            </span></a>
-
-                    </div>
-
-                    <ul class="flex flex-col justify-start items-start gap-5">
-                        <li>1 User</li>
-                        <li class="border-b-2 border-dotted border-black"><span class="font-bold">3 TB</span> of storage
-                        </li>
-                        <li>Connect all your device</li>
-                        <li>Transfer file upto <span class="font-bold">100 GB</span></li>
-                        <li class="border-b-2 border-dotted border-black"><span class="font-bold decoration-dotted">180
-                                Days</span> to
-                            restore deleted file
-                        </li>
-                        <li>Edit PDFs and get signature</li>
-                        <li>Brand files you share</li>
-                        <li>Password protect any files</li>
-                    </ul>
-
-                </div>
-
-                <!-- third pricing -->
-                <div
-                    class="busniess-price h-[100vh] flex bg-[#F2EEE8] flex-col px-5 py-5 justify-star items-start gap-10 max-md:w-full max-md:h-fit rounded-md">
-                    <div class="flex flex-col w-full justify-start items-start gap-5">
-                        <p class="text-gray-600">For professional</p>
-                        <p class="text-black font-semibold text-2xl">Essentials</p>
-                        <p class="price text-black font-semibold text-xl">$15 / user / month</p>
-                        <div
-                            class="flex justify-between items-center   min-w-full  bg-blue-600 px-5 text-white py-2 rounded-lg group font-semibold border-double border-2 border-blue-500">
-                            <p>
-                                Try for free
-                            </p>
-                            <span>
-                                <i
-                                    class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-all duration-200"></i>
-                            </span>
-                        </div>
-                        <a href="#" class="group underline font-bold">or buy now <span>
-                                <i
-                                    class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-all duration-200"></i>
-                            </span></a>
-
-                    </div>
-
-                    <ul class="flex flex-col justify-start items-start gap-5">
-                        <li>1 User</li>
-                        <li class="border-b-2 border-dotted border-black"><span class="font-bold">3 TB</span> of storage
-                        </li>
-                        <li>Connect all your device</li>
-                        <li>Transfer file upto <span class="font-bold">100 GB</span></li>
-                        <li class="border-b-2 border-dotted border-black"><span class="font-bold decoration-dotted">180
-                                Days</span> to
-                            restore deleted file
-                        </li>
-                        <li>Edit PDFs and get signature</li>
-                        <li>Brand files you share</li>
-                        <li>Password protect any files</li>
-                    </ul>
-
-                </div>
-
-
-
-                <!-- fourth pricing -->
-                <div
-                    class="busniess-plus-price h-[100vh] flex bg-[#eee9e2] flex-col px-5 py-5 justify-star items-start gap-10 max-md:w-full max-md:h-fit rounded-md">
-                    <div class="flex flex-col w-full justify-start items-start gap-5">
-                        <p class="text-gray-600">For companies</p>
-                        <p class="text-black font-semibold text-2xl">Business Plus</p>
-                        <p class="price text-black font-semibold text-xl">$30 / user / month</p>
-                        <div
-                            class="flex justify-between items-center   min-w-full  bg-blue-600 px-5 text-white py-2 rounded-lg group font-semibold border-double border-2 border-blue-500">
-                            <p>
-                                Try for free
-                            </p>
-                            <span>
-                                <i
-                                    class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-all duration-200"></i>
-                            </span>
-                        </div>
-                        <a href="#" class="group underline font-bold">or buy now <span>
-                                <i
-                                    class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-all duration-200"></i>
-                            </span></a>
-
-                    </div>
-
-                    <ul class="flex flex-col justify-start items-start gap-5">
-                        <li>3+ User</li>
-                        <li class="border-b-2 border-dotted border-black">Starts at <span class="font-bold">15 TB</span>
-                            for team
-                        </li>
-                        <li>Connect all your device</li>
-                        <li>Transfer file upto <span class="font-bold">250 GB</span></li>
-                        <li class="border-b-2 border-dotted border-black"><span class="font-bold decoration-dotted">1
-                                years</span> to
-                            restore deleted file
-                        </li>
-                        <li>Edit PDFs and get signature</li>
-                        <li>Brand files you share</li>
-                        <li>Password protect any files</li>
-                    </ul>
-
+                    class="max-sm:px-5 max-sm:py-5 px-10 py-5 md:px-20 md:py-20 bg-orange-600 h-full w-full flex justify-center ">
+                    <img src="./assest/desktopapp_img-1.webp" alt="" class="h-full">
                 </div>
 
             </div>
 
+        </section>
 
-            <!-- basic or enterprice option -->
 
-            <div class="flex justify-center items-center mt-10 gap-10 max-md:flex-col">
+        <section class="section-2" class="bg-[#1E1919] mt-10 ">
 
+            <div class=" bg-[#1E1919] flex flex-col">
+                <div class="flex justify-center  text-center  mt-10 font-serif ">
+                    <p class="px-5 text-xl text-white sm:px-10 sm:text-4xl md:text-5xl md:px-40 lg:6xl lg:px-72">
+                        Simplify and
+                        secure your digital
+                        workspace</p>
+                </div>
+
+
+                <!-- part-1 -->
+                <div class="flex justify-center items-center mt-20 md:mt-32 gap-10 md:gap-20 h-fit max-lg:flex-col ">
+                    <div class="flex flex-col text-white justify-center  text-justify gap-10 md:gap-5 h-full  ">
+                        <p class="text-[24px] font-semibold  text-white text-2xl pl-10 lg:pl-40">Share files quickly,
+                            with
+                            anyone
+                        </p>
+
+                        <p class="text-[16px] pl-10 lg:pl-40">Share a Dropbox link—of photos, videos, zipped folders,
+                            CAD files,
+                            and
+                            more—with anyone, even if they don’t have a Dropbox account.</p>
+                        <p class="text-[16px] pl-10 lg:pl-40">Have big files to share? Got you covered. Dropbox is still
+                            the
+                            best
+                            way
+                            to share big files. </p>
+
+                    </div>
+                    <div class="px-10 py-10 bg-[#2B2929]">
+                        <img src="./assest/desktopapp_img-2.webp" alt="">
+                    </div>
+
+                </div>
+
+
+                <!-- part-2 -->
                 <div
-                    class="flex flex-col justify-start items-start bg-[#f7f5f2] px-10 py-7 rounded-md gap-5 w-[40%] max-md:w-full">
-                    <p class="text-xl font-bold">Basic</p>
-                    <p class="text-gray-400 font-bold">Free</p>
-                    <p class="text-justify">2 GB to store and share files</p>
+                    class="flex justify-center lg:flex-row-reverse items-center mt-20 md:mt-32 gap-10 md:gap-20 h-fit max-lg:flex-col ">
+                    <div class="flex flex-col text-white justify-center  text-justify gap-10 md:gap-5 h-full  ">
+                        <p class="text-[24px] font-semibold  text-white text-2xl pl-10 lg:pr-40">Changes sync everywhere
+                        </p>
+
+                        <p class="text-[16px] pl-10 lg:pr-40">Every update you make to your desktop file or folder will
+                            also reflect on dropbox.com, and on your mobile phone and tablet.</p>
+
+                    </div>
+                    <div class="px-10 py-10 bg-[#2B2929]">
+                        <img src="./assest/desktopapp_img-3.webp" alt="">
+                    </div>
+
+                </div>
+
+                <!-- part-3 -->
+
+                <div class="flex justify-center items-center mt-20 md:mt-32 gap-10 md:gap-20 h-fit max-lg:flex-col ">
+                    <div class="flex flex-col text-white justify-center  text-justify gap-10 md:gap-5 h-full  ">
+                        <p class="text-[24px] font-semibold  text-white text-2xl pl-10 lg:pl-40">Right-click your files
+                            and do more
+                        </p>
+
+                        <p class="text-[16px] pl-10 lg:pl-40">Want to send your file for signature? See version history?
+                            By right-clicking a file in your Dropbox folder, you can uncover a whole host of options.
+                        </p>
+
+
+                    </div>
+                    <div class="px-10 py-10 bg-[#2B2929]">
+                        <img src="./assest/desktopapp_img-4.webp" alt="">
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+        <section id="section-4" class="bg-[#1E1919] mt-20">
+
+            <div
+                class="mx-10 lg:mx-20 py-10 flex flex-col lg:flex-row gap-10 justify-start items-start lg:items-center text-white px-1 lg:px-10">
+                <p class="text-xl sm:text-2xl md:text-4xl w-[70%] font-bold text-left lg:6xl">Get the Dropbox Desktop
+                    app today</p>
+                <div class="flex flex-col justify-center items-start gap-10">
+
                     <button
-                        class="border-2 border-black text-black font-bold px-5 py-1 rounded-xl hover:bg-[#F2EEE8] w-fit hover:cursor-pointer">
-                        Get basic
+                        class="flex justify-center max-sm:gap-1 gap-5  items-center w-fit bg-blue-600 text-black px-10 py-5 max-sm:text-sm text-xl font-bold rounded-xl group">
+                        Download<span><i
+                                class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform duration-100 font-light"></i></span>
                     </button>
+
+                    <a href="#"
+                        class=" flex justify-center max-sm:gap-1 gap-2  items-center w-fit font-medium underline group">or
+                        Learn
+                        more <span><i
+                                class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform duration-100"></i></span></a>
+
                 </div>
-                <div
-                    class="flex flex-col justify-start items-start gap-5 w-[45%] bg-[#f7f5f2] px-10 py-5 rounded-md max-md:w-full ">
-                    <p class="text-xl font-bold">Enterprise</p>
-                    <p class="text-gray-400 font-bold">Contact us for pricing</p>
-                    <p class="text-sm text-justify">Customize to your business with enterprise-grade security,
-                        integrations with
-                        best-in-class
-                        security solutions, and live support from dedicated experts</p>
-                    <button
-                        class="border-2 border-black text-black font-bold px-5 py-1 rounded-xl hover:bg-[#F2EEE8] w-fit hover:cursor-pointer">
-                        Contact us
-                    </button>
-                </div>
+
             </div>
 
 
 
-
-        </div>
+        </section>
 
     </main>
+
 
 
     <!-- footer -->
 
     <footer>
-        <div class="bg-black flex flex-col justify-center items-center text-white mt-52">
+        <div class="bg-black flex flex-col justify-center items-center text-white">
 
 
             <div
-                class=" h-full  grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 lg:flex lg:justify-center lg:gap-20 justify-between gap-10 items-start  px-0 pt-16 max-sm:px-2">
+                class=" h-full  grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 lg:flex lg:justify-center lg:gap-16 justify-between gap-10 items-start  px-0 pt-16 max-sm:px-2">
                 <div>
                     <p class="font-bold text-xl max-sm:text-sm">DropBox</p>
                     <ul class="list-none flex flex-col gap-2 mt-5 font-semibold max-sm:text-sm">
@@ -566,8 +502,6 @@
         </div>
 
     </footer>
-
-
 
     <script src="index.js"></script>
 

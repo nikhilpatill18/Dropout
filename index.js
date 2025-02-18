@@ -149,3 +149,42 @@ let a = true
 
 
 // }, 10000);
+
+
+
+
+
+
+
+
+
+
+//  for getstarted page js
+
+
+const monbill = document.getElementById('billmontly')
+const yearbill = document.getElementById('billyearly')
+console.log(monbill.checked)
+console.log(yearbill.checked)
+
+
+const onchangeprice = () => {
+    const plusPrice = document.querySelector(".plus-price .price")
+    const essentialsPrice = document.querySelector(".essentials-price .price")
+    const busniessPrice = document.querySelector(".busniess-price .price")
+    const busniessplusPrice = document.querySelector(".busniess-plus-price .price")
+
+    if (yearbill.checked) {
+        plusPrice.innerHTML = "$9.99/month"
+        essentialsPrice.innerHTML = "$16.58/month"
+        busniessPrice.innerHTML = "$15 / user / month"
+        busniessplusPrice.innerHTML = "$24 / user / month"
+    }
+    else {
+        plusPrice.innerHTML = "$11.99/month"
+        essentialsPrice.innerHTML = "$19.99/month"
+        busniessPrice.innerHTML = "$18 / user / month"
+        busniessplusPrice.innerHTML = "$30 / user / month"
+
+    }
+}
