@@ -13,7 +13,8 @@
 
 </head>
 <style>
-    #testimonial-sub::-webkit-scrollbar {
+    #testimonial-sub::-webkit-scrollbar,
+    .no-scrollbar::-webkit-scrollbar {
         height: 0;
         width: 0;
     }
@@ -154,7 +155,7 @@
                     </li>
                     <li class="hover:text-blue-500"><a href="#">Enterprice</a>
                     </li>
-                    <li class="hover:text-blue-500"><a href="#">Pricing</a></li>
+                    <li class="hover:text-blue-500"><a href="getstarted.html">Pricing</a></li>
                 </ul>
 
             </div>
@@ -172,7 +173,8 @@
                         <div class=" getapp-options  border-gray-800 border-t-2 solution-section  z-50 flex justify-end w-screen absolute top-full left-0   gap-56 px-28 py-10 opacity-0 translate-y-[-20px] invisible group-hover:translate-y-0 bg-black group-hover:opacity-100 group-hover:visible transition-all duration-300 hover:cursor-pointer"
                             id="solution">
                             <ul class="flex flex-col gap-5 text-white text-start justify-end items-end">
-                                <li class="hover:bg-[#544F4D] px-5 py-2 rounded-md"><a href="#">Desktop app</a></li>
+                                <li class="hover:bg-[#544F4D] px-5 py-2 rounded-md"><a href="desktopapp.html">Desktop
+                                        app</a></li>
                                 <li class="hover:bg-[#544F4D] px-5 py-2 rounded-md "><a href="#">Mobile app</a></li>
                             </ul>
 
@@ -204,26 +206,155 @@
         </div>
         <!-- toggle menu section -->
 
-        <div class=" toggle_menu_section    hidden bg-gray-950 h-screen lg:hidden -z-5">
+        <div class=" toggle_menu_section    hidden bg-black h-screen lg:hidden -z-5">
             <div class="flex flex-col text-white font-semibold text-xl gap-10 justify-start ml-3 p-4 mt-4">
-                <ul class="flex flex-col gap-10 ml-10">
-                    <li>
-                        Product <i class="fa-solid fa-chevron-down text-sm font-semibold"></i>
+                <ul class="flex flex-col gap-10 ml-1">
+                    <li class="toggle_products">
+                        <a href="#" class="">Products</a> <i class="fa-solid fa-chevron-down text-sm font-semibold"></i>
+                        <ul class="hidden  flex-col justify-start   rounded-lg bg-[#1E1919] text-white px-5 py-2 mt-5">
+                            <li class="font-bold py-2 ">
+                                <ul class="flex flex-col text-white gap-10 w-[100%]">
+                                    <li class="flex gap-5 group w-fit">
+                                        <div class=" h-full w-full">
+
+                                            <img src="./assest/Dropbox-logo-nav.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <h2
+                                                class="max-xs:font-light max-xs:text-sm group-hover:text-blue-600 font-semibold">
+                                                Dropbox</h2>
+
+                                        </div>
+
+                                    </li>
+                                    <li class="flex gap-5 group ">
+                                        <div class="h-full">
+
+
+                                            <img src="./assest/replay-logo-nav.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <h4 class="group-hover:text-blue-600 font-bold">Replay</h4>
+                                            <p class="max-xs:hidden text-[#F7F5F2]  text-sm font-light">review and
+                                                approve video
+                                                faster
+                                            </p>
+                                        </div>
+
+                                    </li>
+                                    <li class="flex gap-5 group ">
+                                        <div class=" h-full">
+
+                                            <img src="./assest/Backup-logo-nav.svg" alt="">
+                                        </div>
+
+                                        <div>
+                                            <h4 class="group-hover:text-blue-600 font-bold">Backup</h4>
+                                            <p class="max-xs:hidden text-[#F7F5F2]  text-sm font-light">Automatic backup
+                                                your device
+                                            </p>
+                                        </div>
+
+                                    </li>
+
+
+                                </ul>
+                                <ul class="flex flex-col text-white gap-10 w-[100%] mt-5">
+                                    <li class="flex gap-5 group">
+                                        <div class=" h-full">
+
+                                            <img src="./assest/dash-logo-nav.svg" alt="dash-logo">
+                                        </div>
+                                        <div>
+                                            <h4 class="group-hover:text-blue-600 font-bold">Dash</h4>
+                                            <p class="max-xs:hidden text-[#F7F5F2]  text-sm font-light">Store, share,
+                                                and access files
+                                                across device
+                                            </p>
+                                        </div>
+
+                                    </li>
+                                    <li class="flex gap-5 group ">
+                                        <div class="h-full">
+
+
+                                            <img src="./assest/DocSend-logo-nav.svg" alt="doc-send">
+                                        </div>
+                                        <div>
+                                            <h4 class="group-hover:text-blue-600 font-bold">DocSend</h4>
+                                            <p class="max-xs:hidden text-[#F7F5F2]  text-sm font-light">review and
+                                                approve video
+                                                faster</p>
+                                        </div>
+
+                                    </li>
+                                    <li class="flex gap-5 group ">
+                                        <div class=" h-full">
+
+                                            <img src="./assest/dropbox-sign-logo.svg" alt="dropboc-sign">
+                                        </div>
+
+                                        <div>
+                                            <h4 class="group-hover:text-blue-600 font-bold">Sign</h4>
+                                            <p class="max-xs:hidden text-[#F7F5F2]  text-sm font-light">Automatic
+                                                backup
+                                                your device
+                                            </p>
+                                        </div>
+
+                                    </li>
+
+
+                                </ul>
+                            </li>
+
+                        </ul>
+
                     </li>
-                    <li>
-                        Solution <i class="fa-solid fa-chevron-down text-sm font-semibold"></i>
+                    </li>
+                    <li class="toggle_solution">
+                        <a href="#" class="">Solution</a> <i class="fa-solid fa-chevron-down text-sm font-semibold"></i>
+                        <ul class="hidden  flex-col justify-start rounded-lg bg-[#1E1919] text-white px-5 py-2 mt-5">
+                            <li class="font-bold py-2"><a href="#" class="text-gray-400">Teams</a>
+                                <ul class="font-semibold flex flex-col gap-2 mt-5 ml-10">
+                                    <li>Sales</li>
+                                    <li>Marketing</li>
+                                    <li>Hr</li>
+                                    <li>IT</li>
+                                    <li>Creative</li>
+                                </ul>
+                            </li>
+                            <li class="font-bold  py-2"><a href="#" class="text-gray-400">Usecases</a>
+
+                                <ul class="font-semibold flex flex-col gap-2 mt-5 ml-10">
+                                    <li>Sales</li>
+                                    <li>Marketing</li>
+                                    <li>Hr</li>
+                                    <li>IT</li>
+                                    <li>Creative</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </li>
                     </li>
                     <li>
                         Enterprice
                     </li>
                     <li>
-                        Pricing
+                        <a href="getstarted.html">Pricing</a>
                     </li>
                     <li>
                         Contact Sales
                     </li>
-                    <li>
-                        Get app <i class="fa-solid fa-chevron-down text-sm font-semibold"></i>
+                    <li class="toggle_get-app">
+                        <a href="#" class="">Get app</a> <i class="fa-solid fa-chevron-down text-sm font-semibold"></i>
+                        <ul class="hidden  flex-col justify-start rounded-lg bg-[#544F4D] text-white px-5 py-2 mt-5">
+                            <li class="font-bold py-2"><a href="desktopapp.html">Desktop App</a></li>
+                            <li class="font-bold  py-2"><a href="#">Mobile App</a>
+                            </li>
+                        </ul>
+
                     </li>
                 </ul>
                 <button
@@ -306,21 +437,21 @@
 
     <!-- section-3 -->
 
-    <section id="section-3" class="overflow-hidden  ">
+    <!-- <section id="section-3" class="overflow-hidden">
         <div class="mt-60">
-            <h1 class="text-black font-bold md:text-[60vh] text-[40vh]">
-                EXPERIENCE
+            <h1 class="text-black font-bold md:text-[60vh] text-[30vh]">
+                Expierence
             </h1>
         </div>
-    </section>
+    </section> -->
 
     <!-- section-4 -->
 
     <section id="section-4">
-        <div class="w-full pt-48 pb-40 py-56 border border-purple-200">
+        <div class="w-full pt-48 pb-40 py-56 border border-purple-200 lg:mt-72">
             <div class="flex justify-center items-center gap-5 flex-col">
                 <div id="document">
-                    <div class="flex px-4 py-2 bg-purple-500 text-white rounded-xl    ">
+                    <div class="flex px-4 py-2 bg-purple-500 text-white rounded-xl">
                         <p>Document analytics</p>
                     </div>
                 </div>
@@ -330,8 +461,8 @@
                     </h3>
 
                 </div>
-                <div id="para">
-                    <p class=" text-gray-600 font-semibold text-center px-10 sm:px-20 md:px-56">
+                <div id="para" class="lg:px-32">
+                    <p class=" text-gray-600 font-semibold text-center  sm:px-20 md:px-56">
                         With Dropbox DocSend, page-by-page analytics and permission controls track file use in
                         real-time, so you can see when clients, contractors, or collaborators have viewed your content.
                     </p>
@@ -363,13 +494,14 @@
     <!-- section-5 -->
     <section id="section-5">
 
-        <div class="h-screen  lg:relative max-lg:flex justify-center items-center">
+        <div class="h-screen   lg:relative max-lg:flex justify-center items-center">
             <div class=" max-lg:hidden flex justify-end items-center">
                 <div id="img">
                     <img src="./assest/image-3.webp" class=" h-[600px] mt-12 mr-30 xl:mr-96" alt="">
                 </div>
             </div>
-            <div class="lg:absolute top-32 left-80 w-[600px] max-lg:w-full max-lg:px-10 z-40 xl:left-[20%] " id="video">
+            <div class="lg:absolute  lg:top-32 left-80 w-[600px] max-lg:w-full max-lg:px-10 z-40 xl:left-[20%] "
+                id="video">
                 <video src="./assest/video-3.webm" class="" autoplay></video>
 
             </div>
@@ -434,7 +566,8 @@
                     <img src="./assest/iamge-4.webp" class=" h-[600px] mt-12 mr-30 xl:mr-96" alt="">
                 </div>
             </div>
-            <div class="lg:absolute top-32 left-80 w-[600px] max-lg:w-full max-lg:px-10 z-40 xl:left-[20%] " id="video">
+            <div class="lg:absolute lg:top-32 left-80 w-[600px] max-lg:w-full max-lg:px-10 z-40 xl:left-[20%] "
+                id="video">
                 <video src="./assest/video-4webm.webm" class="" autoplay></video>
 
             </div>
@@ -593,8 +726,10 @@
                     <!-- companies option -->
 
                     <div
-                        class="trusted-section no-scrollbar flex w-full gap-52  overflow-x-auto items-center  relative mb-48 ">
-                        <div class="flex w-full gap-52 ">
+                        class="trusted-section no-scrollbar overflow-x-auto flex flex-col w-full gap-20 items-center  relative mb-48 z-[1000]">
+
+
+                        <div class="compaies flex w-full gap-52 ml-10 overflow-x-auto no-scrollbar ">
                             <div class="flex  min-w-fit  ">
                                 <img src="./assest/trusted_1.svg" alt="">
                             </div>
@@ -622,6 +757,13 @@
                             <div class="flex  min-w-fit">
                                 <img src="./assest/trusted_9.svg" alt="">
                             </div>
+                        </div>
+
+                        <div class="flex justify-center items-center gap-10 ">
+                            <span class="   group left-slide hover:text-white hover:cursor-pointers"><i
+                                    class="fa-solid fa-circle-chevron-left text-4xl group-hover:text-white group-hover:cursor-pointers"></i></span>
+                            <span class="   group right-slide hover:text-white hover:cursor-pointers"><i
+                                    class="fa-solid fa-circle-chevron-right text-4xl group-hover:text-white group-hover:cursor-pointers"></i></span>
                         </div>
                     </div>
 

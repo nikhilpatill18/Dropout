@@ -16,10 +16,10 @@
 
 
     <nav class="bg-white  sticky top-0 z-50">
-        <div class="w-full  flex justify-between text-white overflow-hidden ">
-            <div class="nav-left flex gap-10 p-6 items-center text-black ">
+        <div class="w-full  flex justify-between text-white overflow-x-auto ">
+            <div class="nav-left max-xs:hidden flex gap-10 p-6 items-center text-black ">
                 <h3 class="text-xl font-bold"><a href="index.html" class="flex gap-2"><img
-                            src="./assest/Dropbox-logo-nav.svg" class="max-sm:hidden" alt="logo">DropBox</a>
+                            src="./assest/Dropbox-logo-nav.svg" class="max-sm:hidden " alt="logo">DropBox</a>
                 </h3>
                 <ul class="hidden lg:flex gap-5 font-semibold text-black">
                     <li class="products hover:text-blue-500 group"><a href="#">Product</a> <i
@@ -148,7 +148,7 @@
                     </li>
                     <li class="hover:text-blue-500"><a href="#">Enterprice</a>
                     </li>
-                    <li class="hover:text-blue-500"><a href="#">Pricing</a></li>
+                    <li class="hover:text-blue-500"><a href="getstarted.html">Pricing</a></li>
                 </ul>
 
             </div>
@@ -166,7 +166,8 @@
                         <div class=" getapp-options  border-gray-800 border-t-2 solution-section  z-50 flex justify-end w-screen absolute top-full left-0   gap-56 px-28 py-10 opacity-0 translate-y-[-20px] invisible group-hover:translate-y-0 bg-black group-hover:opacity-100 group-hover:visible transition-all duration-300 hover:cursor-pointer"
                             id="solution">
                             <ul class="flex flex-col gap-5 text-white text-start justify-end items-end">
-                                <li class="hover:bg-[#544F4D] px-5 py-2 rounded-md"><a href="#">Desktop app</a></li>
+                                <li class="hover:bg-[#544F4D] px-5 py-2 rounded-md"><a href="desktopapp.html">Desktop
+                                        app</a></li>
                                 <li class="hover:bg-[#544F4D] px-5 py-2 rounded-md "><a href="#">Mobile app</a></li>
                             </ul>
 
@@ -200,23 +201,150 @@
         <div class=" toggle_menu_section    hidden bg-gray-950 h-screen lg:hidden -z-5">
             <div class="flex flex-col text-white font-semibold text-xl gap-10 justify-start ml-3 p-4 mt-4">
                 <ul class="flex flex-col gap-10 ml-10">
-                    <li>
-                        Product <i class="fa-solid fa-chevron-down text-sm font-semibold"></i>
+                    <li class="toggle_products">
+                        <a href="#" class="">Products</a> <i class="fa-solid fa-chevron-down text-sm font-semibold"></i>
+                        <ul class="hidden  flex-col justify-start   rounded-lg bg-[#1E1919] text-white px-5 py-2 mt-5">
+                            <li class="font-bold py-2 ">
+                                <ul class="flex flex-col text-white gap-10 w-[100%]">
+                                    <li class="flex gap-5 group w-fit">
+                                        <div class=" h-full w-full">
+
+                                            <img src="./assest/Dropbox-logo-nav.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <h2
+                                                class="max-xs:font-light max-xs:text-sm group-hover:text-blue-600 font-semibold">
+                                                Dropbox</h2>
+
+                                        </div>
+
+                                    </li>
+                                    <li class="flex gap-5 group ">
+                                        <div class="h-full">
+
+
+                                            <img src="./assest/replay-logo-nav.svg" alt="">
+                                        </div>
+                                        <div>
+                                            <h4 class="group-hover:text-blue-600 font-bold">Replay</h4>
+                                            <p class="max-xs:hidden text-[#F7F5F2]  text-sm font-light">review and
+                                                approve video
+                                                faster
+                                            </p>
+                                        </div>
+
+                                    </li>
+                                    <li class="flex gap-5 group ">
+                                        <div class=" h-full">
+
+                                            <img src="./assest/Backup-logo-nav.svg" alt="">
+                                        </div>
+
+                                        <div>
+                                            <h4 class="group-hover:text-blue-600 font-bold">Backup</h4>
+                                            <p class="max-xs:hidden text-[#F7F5F2]  text-sm font-light">Automatic backup
+                                                your device
+                                            </p>
+                                        </div>
+
+                                    </li>
+
+
+                                </ul>
+                                <ul class="flex flex-col text-white gap-10 w-[100%] mt-5">
+                                    <li class="flex gap-5 group">
+                                        <div class=" h-full">
+
+                                            <img src="./assest/dash-logo-nav.svg" alt="dash-logo">
+                                        </div>
+                                        <div>
+                                            <h4 class="group-hover:text-blue-600 font-bold">Dash</h4>
+                                            <p class="max-xs:hidden text-[#F7F5F2]  text-sm font-light">Store, share,
+                                                and access files
+                                                across device
+                                            </p>
+                                        </div>
+
+                                    </li>
+                                    <li class="flex gap-5 group ">
+                                        <div class="h-full">
+
+
+                                            <img src="./assest/DocSend-logo-nav.svg" alt="doc-send">
+                                        </div>
+                                        <div>
+                                            <h4 class="group-hover:text-blue-600 font-bold">DocSend</h4>
+                                            <p class="max-xs:hidden text-[#F7F5F2]  text-sm font-light">review and
+                                                approve video
+                                                faster</p>
+                                        </div>
+
+                                    </li>
+                                    <li class="flex gap-5 group ">
+                                        <div class=" h-full">
+
+                                            <img src="./assest/dropbox-sign-logo.svg" alt="dropboc-sign">
+                                        </div>
+
+                                        <div>
+                                            <h4 class="group-hover:text-blue-600 font-bold">Sign</h4>
+                                            <p class="max-xs:hidden text-[#F7F5F2]  text-sm font-light">Automatic
+                                                backup
+                                                your device
+                                            </p>
+                                        </div>
+
+                                    </li>
+
+
+                                </ul>
+                            </li>
+
+                        </ul>
+
                     </li>
-                    <li>
-                        Solution <i class="fa-solid fa-chevron-down text-sm font-semibold"></i>
+                    <li class="toggle_solution">
+                        <a href="#" class="">Solution</a> <i class="fa-solid fa-chevron-down text-sm font-semibold"></i>
+                        <ul class="hidden  flex-col justify-start rounded-lg bg-[#1E1919] text-white px-5 py-2 mt-5">
+                            <li class="font-bold py-2"><a href="#" class="text-gray-400">Teams</a>
+                                <ul class="font-semibold flex flex-col gap-2 mt-5 ml-10">
+                                    <li>Sales</li>
+                                    <li>Marketing</li>
+                                    <li>Hr</li>
+                                    <li>IT</li>
+                                    <li>Creative</li>
+                                </ul>
+                            </li>
+                            <li class="font-bold  py-2"><a href="#" class="text-gray-400">Usecases</a>
+
+                                <ul class="font-semibold flex flex-col gap-2 mt-5 ml-10">
+                                    <li>Sales</li>
+                                    <li>Marketing</li>
+                                    <li>Hr</li>
+                                    <li>IT</li>
+                                    <li>Creative</li>
+                                </ul>
+                            </li>
+                        </ul>
+
                     </li>
                     <li>
                         Enterprice
                     </li>
                     <li>
-                        Pricing
+                        <a href="getstarted.html">Pricing</a>
                     </li>
                     <li>
                         Contact Sales
                     </li>
-                    <li>
-                        Get app <i class="fa-solid fa-chevron-down text-sm font-semibold"></i>
+                    <li class="toggle_get-app">
+                        <a href="#" class="">Get app</a> <i class="fa-solid fa-chevron-down text-sm font-semibold"></i>
+                        <ul class="hidden  flex-col justify-start rounded-lg bg-[#544F4D] text-white px-5 py-2 mt-5">
+                            <li class="font-bold py-2"><a href="desktopapp.html">Desktop App</a></li>
+                            <li class="font-bold  py-2"><a href="#">Mobile App</a>
+                            </li>
+                        </ul>
+
                     </li>
                 </ul>
                 <button
@@ -274,7 +402,7 @@
         </section>
 
 
-        <section class="section-2" class="bg-[#1E1919] mt-10 ">
+        <section id="section-2" class="bg-[#1E1919] mt-10 ">
 
             <div class=" bg-[#1E1919] flex flex-col">
                 <div class="flex justify-center  text-center  mt-10 font-serif ">
@@ -360,6 +488,49 @@
         </section>
 
 
+        <section id="section-3">
+
+            <div class="flex flex-col justify-center items-center gap-10 mt-20">
+                <div
+                    class="font-semibold text-xl px-2 md:font-bold md:text-3xl lg:text-5xl text-center md:px-20 lg:px-52">
+                    <h1>Unlock the full potential of the Dropbox folder on desktop</h1>
+                </div>
+                <div class="flex flex-col px-10 md:px-20 lg:grid grid-cols-3 grid-rows-1 gap-10 lj:px-36 lg:py-10">
+                    <div class="flex flex-col gap-5   ">
+                        <div class="py-5 px-5 md:py-10 md:px-5 bg-[#EEE9E2]">
+                            <img src="./assest/section-3img_1.webp" alt="">
+                        </div>
+                        <p class="font-bold text-justify ">Control file and folder permissions</p>
+                        <p class=" font-medium">Dropbox makes it easy to control who can access your files and how much
+                            they can do.</p>
+
+                    </div>
+                    <div class="flex flex-col gap-5   ">
+                        <div class="py-5 px-5 md: md:px-5 bg-[#EEE9E2] ">
+                            <img src="./assest/section-3img_2.webp" alt="">
+                        </div>
+                        <p class="font-bold text-justify ">Control file and folder permissions</p>
+                        <p class=" font-medium">Dropbox makes it easy to control who can access your files and how much
+                            they can do.</p>
+
+                    </div>
+                    <div class="flex flex-col gap-5   ">
+                        <div class="py-5 px-5 md:py-10 md:px-5 bg-[#EEE9E2]">
+                            <img src="./assest/section-3img_3.webp" alt="">
+                        </div>
+                        <p class="font-bold text-justify ">Control file and folder permissions</p>
+                        <p class=" font-medium">Dropbox makes it easy to control who can access your files and how much
+                            they can do.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
         <section id="section-4" class="bg-[#1E1919] mt-20">
 
             <div
@@ -369,7 +540,7 @@
                 <div class="flex flex-col justify-center items-start gap-10">
 
                     <button
-                        class="flex justify-center max-sm:gap-1 gap-5  items-center w-fit bg-blue-600 text-black px-10 py-5 max-sm:text-sm text-xl font-bold rounded-xl group">
+                        class="flex justify-center max-sm:gap-1 gap-5  items-center w-fit bg-blue-600 text-black xs:px-10 xs:py-5 max-sm:text-sm text-xl font-bold rounded-xl group">
                         Download<span><i
                                 class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform duration-100 font-light"></i></span>
                     </button>

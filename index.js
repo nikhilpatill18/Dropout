@@ -1,6 +1,52 @@
 const menu = document.querySelector('.menu_icon')
 const x_icon = document.querySelector('.x_icon')
 const toggle_menu_section = document.querySelector('.toggle_menu_section')
+
+const togglegetApp = document.querySelector('.toggle_get-app');
+const toggleProducts = document.querySelector('.toggle_products');
+const toggleSolution = document.querySelector('.toggle_solution');
+
+togglegetApp.addEventListener('click', () => {
+    // console.log(togglegetApp.children)
+    togglegetApp.children[1].classList.toggle('text-blue-600')
+    togglegetApp.children[2].classList.toggle('hidden')
+})
+toggleProducts.addEventListener('click', () => {
+    // console.log(togglegetApp.children)
+    toggleProducts.children[1].classList.toggle('text-blue-600')
+    toggleProducts.children[2].classList.toggle('hidden')
+})
+toggleSolution.addEventListener('click', () => {
+    // console.log(togglegetApp.children)
+    toggleSolution.children[1].classList.toggle('text-blue-600')
+    toggleSolution.children[2].classList.toggle('hidden')
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 menu.addEventListener('click', () => {
     menu.classList.toggle('hidden')
     x_icon.classList.toggle('hidden')
@@ -16,8 +62,7 @@ x_icon.addEventListener('click', () => {
     toggle_menu_section.classList.toggle('hidden')
 
 })
-// console.log(window.scrollY)
-// console.log(window.location.pathname)
+
 
 
 if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
@@ -54,108 +99,30 @@ if (window.location.pathname === "/index.html" || window.location.pathname === "
 }
 
 
-const line1 = document.querySelector(".trusted-section>div")
-console.log(line1)
+// animatio of the comaonies
 
 
+const images = document.querySelectorAll('.trusted-section>.compaies>div');
+const leftSlide = document.querySelector('.left-slide');
+const rightSlide = document.querySelector('.right-slide');
 
+let intalmov = 0; // 
 
-// const imagepath = [
-//     './assest/trusted_1.svg',
-//     './assest/trusted_2.svg',
-//     "./assest/trusted_3.svg",
-//     "./assest/trusted_4.svg",
-//     "./assest/trusted_5.svg",
-//     "./assest/trusted_6.svg",
-//     "./assest/trusted_7.svg",
-//     "./assest/trusted_8.svg",
-//     "./assest/trusted_9.svg",
-// ]
+leftSlide.addEventListener('click', () => {
+    intalmov -= images[0].clientWidth;
+    images.forEach((img) => {
+        img.style.transform = `translateX(${intalmov}px)`;
+        img.style.transition = 'transform 0.5s linear';
+    });
+});
 
-
-
-function addelement(index) {
-    const div = document.createElement('div')
-    div.classList.add('flex', 'min-w-fit')
-    div.innerHTML = `<img src="${imagepath[index]}" alt="company">`
-    // console.log(div)
-    line1.appendChild(div)
-    div.style.transform = `transalteX(${500}px)`
-    div.style.transition = 'transform 1s linear'
-
-}
-
-// let start = 0
-
-// setInterval(() => {
-//     if (start == imagepath.length) {
-//         start = 0
-//     }
-//     addelement(start)
-//     start = start + 1
-
-// }, 100);
-
-// for (let index = 0; index < 9; index++) {
-//     addelement(index)
-// }
-
-// const line2 = document.querySelectorAll(".trusted-section div")
-
-
-// let start = 0
-// function animateleft() {
-//     if (start == line2.length) {
-//         start = 0
-//     }
-//     else {
-//         // console.log(start)
-//         line2[start].style.transform = `translateX(-${1000}px)`
-//         line2[start].style.transition = 'transform 1s linear '
-//         start = start + 1
-//     }
-// }
-// setInterval(() => {
-//     animateleft()
-//     start = 0
-//     console.log("hi")
-
-// }, 0);
-
-
-
-const animateleft = () => {
-    document.querySelector(".trusted-section>div").style.transform = 'translateX(-200%)'
-    document.querySelector(".trusted-section>div").style.transition = 'transform 10s linear'
-}
-const animaright = () => {
-    document.querySelector(".trusted-section>div").style.transform = 'translateX(10 0%)'
-    document.querySelector(".trusted-section>div").style.transition = 'transform 10s linear'
-
-}
-
-let a = true
-// setInterval(() => {
-
-//     if (a) {
-//         animateleft()
-//         a = false
-//     }
-//     else {
-//         animaright()
-//         a = true
-//     }
-
-
-
-// }, 10000);
-
-
-
-
-
-
-
+rightSlide.addEventListener('click', () => {
+    intalmov += images[0].clientWidth;
+    images.forEach((img) => {
+        img.style.transform = `translateX(${intalmov}px)`;
+        img.style.transition = 'transform 0.5s linear';
+    });
+});
 
 
 
